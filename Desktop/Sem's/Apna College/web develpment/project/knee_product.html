@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="main_home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #000; /* Dark gray for containers */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .product-image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-image-container img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        .product-image-container img {
+            transition: transform 0.3s ; 
+        }
+
+        .product-image-container:hover img  {
+            transform: scale(1.2); 
+        }
+
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-info {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-info h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .product-info .price {
+            font-size: 24px;
+            color: #fff; 
+            margin-bottom: 20px;
+        }
+
+        .product-info .rating {
+            margin-bottom: 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .stars {
+            color: #ffcc00; /* Gold stars */
+            margin-right: 5px;
+        }
+
+        .review-count {
+            font-size: 14px;
+            color: #999; /* Muted gray for review count */
+            margin-left: 10px;
+        }
+
+        .product-info .description {
+            font-size: 16px;
+            color: #ddd; /* Light gray text */
+        }
+
+        .add-to-cart-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: rgb(230, 21, 21); /* Red button */
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: rgb(230, 21, 21); /* Darker red on hover */
+        }
+
+        /* Reviews Section */
+        .reviews {
+            margin-top: 50px;
+        }
+
+        .reviews h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .review-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #2a2a2a; /* Dark gray for reviews */
+            border: 2px solid rgb(63, 60, 60); /*  border for reviews */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .review-item .reviewer-name {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .review-item .review-stars {
+            color: #ffcc00; /* Gold stars */
+        }
+
+        .review-item .review-text {
+            font-size: 16px;
+            color: #ddd; /* Light gray for review text */
+            margin-top: 5px;
+        }
+
+        /* Other Products Section */
+        .other-products-section {
+            margin-top: 50px;
+        }
+
+        .other-products-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border: 2px solid rgb(230, 21, 21); /* Red border for product items */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .product-item h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .product-item .price {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .view-details-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(230, 21, 21); /* Red button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .view-details-btn:hover {
+            background-color: rgb(230, 21, 21); /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="main_home.html" target="_self">
+            <img src="SBDlogo.avif" alt="SBD Logo">
+          </a>
+    </div>
+        <ul class="nav-links">
+          <li><a href="main_home.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+    <div class="nav-icons">
+          <a href="#"><span class="icon">🔍</span></a>
+          <a href="#"><span class="icon">👤</span></a>
+          <a href="#"><span class="icon">❤️</span></a>
+          <a href="#"><span class="icon">🛒 Rs. 0</span></a>
+    </div>
+</header>  
+
+<div class="container">
+    <!-- Main Product Section -->
+    <div class="product-details">
+        <!-- Product Image -->
+        <div class="product-image-container">
+            <img src="Knee-Sleeves-7mm-03.jpg.webp" alt="Product Image">
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+            <h1>Knee Sleeves 7mm</h1>
+            <h3>Rs. 7,199</h3>
+            <hr>
+            <p>Tax included. Shipping calculated at checkout.
+            </p>
+            <p class="price">
+                Manufactured with high grade 7mm neoprene, designed to minimise the risk of injury and to aid performance. Relied on by strength athletes around the world, these 7mm knee sleeves are ideal for powerlifting and heavy training. 
+<br>
+If you are new to wearing knee sleeves we recommend going with the recommended fit instead of sizing down, especially if you fall on size medium or smaller.
+                    <li>Sold as a pair.</li>
+                    <li> Combines a 5mm interior panel for freedom of movement and a 7mm exterior panel for maximum joint support.</li> 
+                    <li>Reinforced seam construction to maximise longevity.</li>
+                    <li>Antimicrobial treatment minimises the build-up of bacteria and reduces odour.</li>
+                    <li>Manufactured in India.</li>
+
+                </ul>
+               
+            </p>
+
+            <!-- Star Rating -->
+            <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="review-count">(120 Reviews)</span>
+            </div>
+
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        
+        <!-- Review 1 -->
+        <div class="review-item">
+            <div class="reviewer-name">John Doe</div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">Amazing product! Highly recommend it.</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-item">
+            <div class="reviewer-name">Jane Smith</div>
+            <div class="review-stars">★★★★☆</div>
+            <div class="review-text">Good quality, but a bit pricey.</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-item">
+            <div class="reviewer-name">Sam Wilson</div>
+            <div class="review-stars">★★★☆☆</div>
+            <div class="review-text">It's okay, but I expected better durability.</div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Get in touch</h4>
+        <div class="social-icons">
+          <a href="#"><img src="fbColor.png" alt="Facebook"></a>
+          <a href="#"><img src="instagramColor.png" alt="Instagram"></a>
+          <a href="#"><img src="youtubeRed.png" alt="YouTube"></a>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Menu</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about_us.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Phantom</a></li>
+          <li><a href="#">Storm</a></li>
+          <li><a href="#">Defy</a></li>
+          <li><a href="#">Momentum</a></li>
+          <li><a href="#">Sportswear</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Newsletter Signup</h4>
+        <p>Subscribe to our newsletter</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2024 <span style="color: red;">SBD INDIA</span></p>
+      <ul class="footer-policies">
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+      </ul>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Black background */
+            color: #ffffff; /* White text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .order-container {
+            background: #1e1e1e; /* Darker container background */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 10px;
+            color: white; /* Red text for the product title */
+        }
+        .product-price {
+            font-size: 16px;
+            color: #ff0000; /* Green text for the price */
+            margin-bottom: 20px;
+        }
+        .confirm-button {
+            background-color: #ff0000; /* Red button */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .confirm-button:hover {
+            background-color: #cc0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <img src="https://via.placeholder.com/300" alt="Product Image" class="product-image">
+        <div class="product-title">Sample Product</div>
+        <div class="product-price">$49.99</div>
+        <button class="confirm-button">Confirm Order</button>
+    </div>
+</body>
+</html>

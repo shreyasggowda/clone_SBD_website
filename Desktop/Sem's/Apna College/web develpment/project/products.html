@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBD Collections</title>
+    <link rel="stylesheet" href="main_home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        .header {
+            background-color: rgb(230, 21, 21);
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 36px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-info h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .product-info p {
+            margin: 0 0 10px;
+            font-size: 16px;
+            color: #666;
+        }
+        .product-info .price {
+            font-size: 18px;
+            color: rgb(230, 21, 21);
+            font-weight: bold;
+        }
+        .product-info .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: white;
+            background-color:rgb(230, 21, 21);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-info .btn:hover {
+            background-color: rgb(230, 21, 21);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+          <a href="main_home.html" target="_self">
+            <img src="SBDlogo.avif" alt="SBD Logo">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="main_home.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="#"><span class="icon">🔍</span></a>
+          <a href="#"><span class="icon">👤</span></a>
+          <a href="#"><span class="icon">❤️</span></a>
+          <a href="#"><span class="icon">🛒 Rs. 0</span></a>
+        </div>
+      </header>    
+<br><br><br><br>
+    <div class="header">
+        <h1>Collections</h1>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="PRODUCT-BELT-1080x1080-01-600x600_334bae78-7cf9-4e11-b7c4-01500a0af028.jpg.webp" alt="SBD Belt">
+            </div>
+            <div class="product-info">
+                <p><b>SBD Belt</b><br><br>High-performance lifting belt.</p>
+                <p class="price">Rs. 24,999</p>
+                <a href="belt_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="shirt.jpg.webp" alt="SBD Shirt">
+            </div>
+            <div class="product-info">
+               
+                <p><b>Competition shirt</b><br><br>Comfortable and durable workout shirt.</p>
+                <p class="price">Rs. 2,999</p>
+                <a href="shirt_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="singlet.webp" alt="SBD Singlet">
+            </div>
+            <div class="product-info">
+                
+                <p><b>Powerlifting Singlet</b><br><br>Optimized for powerlifting and weightlifting.</p>
+                <p class="price"> Rs. 9,199</p>
+                <a href="singlet_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Elbow-Sleeves-01.jpg.webp" alt="Elbow Sleeves">
+            </div>
+            <div class="product-info">
+                
+                <p><b>SBD Elbow Sleeves - 2024 NEW edition</b><br><br>Enhanced support for heavy lifts.</p>
+                <p class="price">Rs. 5,999</p>
+                <a href="elbow_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Knee-Sleeves-7mm-03.jpg.webp" alt="Knee Sleeves">
+            </div>
+            <div class="product-info">
+                
+                <p><b>Knee Sleeves 7mm</b><br><br>Supportive sleeves for squats and heavy lifts.</p>
+                <p class="price">Rs. 7,199</p>
+                <a href="knee_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Wrist-Wraps-STIFF-01.jpg.webp" alt="Wrist Wraps">
+            </div>
+            <div class="product-info">
+                
+                <p><b>Wrist Wraps Momentum Limited Edition</b><br><br>Secure your wrists for heavy bench presses.</p>
+                <p class="price">Rs. 4,199</p>
+                <a href="wristWrap_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="SOCKS-01.jpg.webp" alt="Socks">
+            </div>
+            <div class="product-info">
+                
+                <p><b>Deadlift socks</b><br><br>Anti-slip socks for deadlifts and squats.</p>
+                <p class="price"> Rs. 1,899</p>
+                <a href="socks_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Oversized-T-shirt-01.jpg.webp" alt="Training T-Shirt">
+            </div>
+            <div class="product-info">
+               
+                <p> <b>SBD Oversized shirt Forge Limited Edition</b><br><br>Lightweight, breathable training wear.</p>
+                <p class="price">Rs. 4,200</p>
+                <a href="oversized_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="Lifting-Straps-02.jpg.webp" alt="Lifting Straps">
+            </div>
+            <div class="product-info">
+                
+                <p><b>SBD Lifting Straps</b><br><br>Maximize your grip during heavy lifts.</p>
+                <p class="price">Rs. 3,199</p>
+                <a href="liftingStraps_product.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>Get in touch</h4>
+            <div class="social-icons">
+              <a href="#"><img src="fbColor.png" alt="Facebook"></a>
+              <a href="#"><img src="instagramColor.png" alt="Instagram"></a>
+              <a href="#"><img src="youtubeRed.png" alt="YouTube"></a>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Menu</h4>
+            <ul class="footer-links">
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about_us.html">Our Story</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Phantom</a></li>
+              <li><a href="#">Storm</a></li>
+              <li><a href="#">Defy</a></li>
+              <li><a href="#">Momentum</a></li>
+              <li><a href="#">Sportswear</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Newsletter Signup</h4>
+            <p>Subscribe to our newsletter</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; Copyright 2024 <span style="color: red;">SBD INDIA</span></p>
+          <ul class="footer-policies">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+          </ul>
+      </footer>
+
+</body>
+</html>
